@@ -1,0 +1,128 @@
+* {
+  color: black;
+}
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: #212121;
+}
+:root {
+  --brand-color: #2196f3;
+  --color-secondary: #ffffff;
+  --color-third: #757575;
+}
+.link {
+  text-decoration: none;
+  width: 58px;
+  height: 16px;
+  top: 32px;
+  left: 55px;
+}
+.nav-button a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--brand-color);
+}
+button:hover {
+  background-color: var(--brand-color);
+  color: var(--color-secondary);
+}
+
+.ul {
+  list-style-type: none;
+}
+
+.post-title {
+  text-align: center;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.blue-text {
+  color: var(--brand-color);
+}
+.button-first {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: var(--brand-color);
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+.button-second {
+  cursor: pointer;
+}
+
+.h4 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+.text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.h2 {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  text-align: center;
+}
+.address {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-secondary);
+  font-style: normal;
+}
+
+.person h4 {
+  font-size: 16px;
+  line-height: 18, 75px;
+  font-weight: 500;
+}
+.job {
+  font-size: 16px;
+  line-height: 18, 75px;
+  color: var(--color-third);
+}
+.projects h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.example {
+  font-size: 16px;
+  color: var(--color-third);
+}
+.footer-contact {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  line-height: 24px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background: var(--color-secondary);
+  list-style-type: none;
+}
+.main-descripton {
+  background-color: #2f303a;
+  color: var(--color-secondary);
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: 900;
+  width: 696px;
+  top: 280px;
+  left: 452px;
+  text-decoration: none;
+}
