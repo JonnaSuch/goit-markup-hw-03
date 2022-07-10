@@ -89,11 +89,12 @@ button:hover {
   display: flex;
   font-size: 14px;
   line-height: 24px;
-  padding-left: 372px;
-  justify-content: flex-end;
+  padding-left: 300px;
   margin-right: 10px;
 }
-
+.contact-list {
+  margin-right: 30px;
+}
 .logo {
   padding-top: 24px;
   padding-left: 215px;
