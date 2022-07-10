@@ -27,38 +27,45 @@ a:hover {
 }
 
 .container {
-  width: 1600px;
-  padding: 0 15px;
+  width: 1200px;
   align-items: center;
-  margin: 0 auto;
+  display: inline;
 }
 
-.header .container {
-  display: flex;
-  width: 1600px;
-  height: 80px;
-}
 .nav-button {
   display: flex;
 }
 .nav-button a {
   text-decoration: none;
 }
-
+.nav-menu {
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 button:hover {
   background-color: var(--brand-color);
   color: var(--color-secondary);
 }
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .first-link {
   font-weight: 500px;
   font-size: 14px;
   line-height: 1, 142em;
   letter-spacing: 0, 02em;
 }
+
 .second-link {
   color: #757575;
-  font-weight: 500px;
-  margin-left: 50px;
+  line-height: 24px;
   text-decoration: none;
 }
 .link {
@@ -71,26 +78,23 @@ button:hover {
 .menu {
   list-style-type: none;
   display: flex;
-  width: 254px;
-  height: 16px;
-  margin-top: 32px;
-  margin-left: 453px;
-}
-.menu-list {
-  padding-left: 46px;
+  text-decoration: none;
 }
 
 .contact {
   list-style-type: none;
   display: flex;
-  padding-top: 32px;
-  margin-left: 227px;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 372px;
+  gap: 50px;
 }
 
 .logo {
   padding-top: 24px;
   padding-left: 215px;
   padding-bottom: 25px;
+  padding-right: 90px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -103,14 +107,18 @@ button:hover {
 .blue-text {
   color: var(--brand-color);
 }
-.contact {
-  margin-left: auto;
-}
 
-.main-section .container {
+.main-section {
   width: 1600px;
   height: 600;
   background-color: #2f303a;
+  margin: auto;
+  display: block;
+}
+.main-section-text {
+  display: block;
+  text-align: center;
+  padding: 200px 452px 280px 452px;
 }
 
 .main-descripton {
@@ -119,11 +127,10 @@ button:hover {
   font-weight: 900;
   line-height: 1.363em;
   text-align: center;
-  letter-spacing: 0, 06em;
-  padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 45px;
   text-transform: uppercase;
+  display: block;
+  width: 696px;
+  margin: auto;
 }
 
 .button-first {
@@ -131,52 +138,47 @@ button:hover {
   height: 50px;
   border-radius: 4px;
   margin-top: 30px;
-  margin-left: 700px;
-  margin-bottom: 200px;
   background-color: var(--brand-color);
   cursor: pointer;
   color: #fff;
   box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  padding: 10px 41px 10px 42px;
 }
 
 .list-lorem {
-  width: 1600px;
-  height: 769px;
-  background-color: #fff;
-}
-.first-lorem {
-  width: 1170px;
-  height: 101px;
   padding-top: 94px;
-  margin-left: 215px;
-  display: flex;
-  align-content: space-around;
-  gap: 30px;
 }
+
 .first-lorem-list {
   width: 270px;
-  height: 133px;
+  display: flex;
 }
 
 .title-lorem {
   font-size: 14px;
-  line-height: 1.142em;
+  line-height: 1.14em;
   font-weight: 700;
-  letter-spacing: 0, 03em;
-  margin-bottom: 10px;
 }
 .text {
   font-size: 14px;
-  line-height: 1.714em;
-  font-weight: 400;
-  letter-spacing: 0.03em;
+  line-height: 1.71em;
+  height: fit-content;
   color: #757575;
+  padding-top: 10px;
 }
-
+.first-lorem {
+  display: flex;
+  justify-content: center;
+  padding-left: 215px;
+  padding-right: 215px;
+}
 .our-job .container {
-  width: 1170px;
-  height: 386px;
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .img-size {
@@ -187,37 +189,34 @@ button:hover {
   display: flex;
   list-style-type: none;
   gap: 30px;
-  margin-left: 215px;
-  justify-content: space-around;
+  justify-content: center;
 }
 .title-works {
   font-size: 36px;
-  line-height: 1.666em;
+  line-height: 1.17em;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  padding-top: 94px;
-  margin-left: 624px;
-  margin-bottom: 50px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
-.our-team .container {
-  width: 1600px;
-  height: 648px;
+.our-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
 }
 .title-team {
   font-size: 36px;
-  line-height: 1.666em;
+  line-height: 1.17em;
   font-weight: 700;
-  padding-top: 94px;
-  padding-left: 695px;
+  text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 50px;
 }
 
 .person {
   display: flex;
-  padding-left: 185px;
-  margin-top: 50px;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 94px;
 }
 .person-name {
   font-weight: 700;
@@ -250,10 +249,12 @@ button:hover {
   width: 1600px;
   height: 252px;
 }
-.logo-footer {
+.logo-class {
   padding-top: 60px;
   padding-left: 215px;
   padding-bottom: 0;
+}
+.logo-footer {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -263,7 +264,7 @@ button:hover {
 }
 .address {
   font-style: normal;
-  padding-top: 111px;
+  padding-top: 20px;
   padding-left: 215px;
 }
 .address-link {
@@ -321,7 +322,6 @@ button:hover {
 
 .example-projects {
   width: 1170px;
-  height: 1288px;
   padding-bottom: 94px;
 }
 
@@ -337,10 +337,8 @@ button:hover {
 }
 .projects-item {
   width: 370px;
-  height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  justify-content: space-around;
 }
 .example {
   line-height: 1.714em;
