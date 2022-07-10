@@ -10,7 +10,12 @@ body {
   border: 0;
   background-color: var(---color-seconadary);
 }
-
+.style {
+  list-style: none;
+}
+.decoration {
+  text-decoration: none;
+}
 :root {
   --brand-color: #2196f3;
   --color-secondary: #060404;
@@ -134,7 +139,7 @@ button:hover {
   box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.15);
 }
 
-.list-lorem .container {
+.list-lorem {
   width: 1600px;
   height: 769px;
   background-color: #fff;
@@ -151,7 +156,6 @@ button:hover {
 .first-lorem-list {
   width: 270px;
   height: 133px;
-  list-style-type: none;
 }
 
 .title-lorem {
@@ -184,12 +188,16 @@ button:hover {
   list-style-type: none;
   gap: 30px;
   margin-left: 215px;
+  justify-content: space-around;
 }
 .title-works {
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.666em;
   font-weight: 700;
-  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 94px;
+  margin-left: 624px;
+  margin-bottom: 50px;
 }
 
 .our-team .container {
@@ -239,34 +247,32 @@ button:hover {
 .footer {
   background-color: #2f303a;
   color: var(--color-secondary);
-  font-size: 44px;
-  line-height: 60px;
-  font-weight: 900;
-  width: 696px;
-  top: 280px;
-  left: 452px;
-  text-decoration: none;
+  width: 1600px;
+  height: 252px;
 }
-.example-projects .container {
-  width: 1170px;
-  height: 1360px;
-  top: 174px;
-  left: 215px;
-  margin: auto;
+.logo-footer {
+  padding-top: 60px;
+  padding-left: 215px;
+  padding-bottom: 0;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  line-height: 1, 192em;
 }
-.person h4 {
-  font-size: 16px;
-  line-height: 18, 75px;
-  font-weight: 500;
+.address {
+  font-style: normal;
+  padding-top: 111px;
+  padding-left: 215px;
+}
+.address-link {
+  color: #ffffff;
+}
+.footer-list-item style {
+  margin-top: 9px;
 }
 
-.address {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: var(--color-secondary);
-  font-style: normal;
-}
 .footer-contact {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
@@ -274,8 +280,49 @@ button:hover {
   line-height: 24px;
 }
 
+.portfolio {
+  width: 1600px;
+  height: 1880px;
+}
+.page-second {
+  width: 1170px;
+  height: 1360px;
+  padding-top: 94px;
+  padding-left: 215px;
+}
+.portfolio-list {
+  margin-left: 327px;
+}
+button:hover {
+  background-color: var(--brand-color);
+  color: #fff;
+}
+
 .button-second {
   cursor: pointer;
+  text-align: center;
+  font-weight: 500px;
+  line-height: 1.625em;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: 0;
+  background-color: #f5f4fa;
+  box-shadow: 0px 3px 1 px rgb(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button-list {
+  display: flex;
+  gap: 8px;
+  justify-content: space-around;
+}
+.page-name {
+  margin: 6px 22px;
+}
+
+.example-projects {
+  width: 1170px;
+  height: 1288px;
+  padding-bottom: 94px;
 }
 
 .example {
@@ -285,27 +332,30 @@ button:hover {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
+  margin-top: 48px;
+  gap: 30px;
 }
-.projects h4 {
+.projects-item {
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  justify-content: space-around;
+}
+.example {
+  line-height: 1.714em;
+  letter-spacing: 0, 03em;
+  color: var(--color-third);
+  padding-left: 24px;
+}
+.project-name {
   font-size: 18px;
   font-weight: 700;
+  line-height: 2em;
+  letter-spacing: 0, 06em;
+  padding-top: 20px;
+  padding-left: 24px;
 }
-
-.ul {
-  list-style-type: none;
-}
-.post-title {
-  text-align: center;
-}
-.h4 {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 700;
-}
-.h2 {
-  font-size: 36px;
-  line-height: 42px;
-  font-weight: 700;
-  text-align: center;
+.view {
+  display: block;
 }
