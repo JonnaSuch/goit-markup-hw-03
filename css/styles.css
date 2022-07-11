@@ -95,7 +95,7 @@ button:hover {
   display: flex;
   font-size: 14px;
   line-height: 24px;
-  padding-left: 300px;
+  padding-left: 220px;
   margin-right: 10px;
 }
 .contact-list {
@@ -345,7 +345,7 @@ button:hover {
 }
 .projects-item {
   justify-content: space-between;
-  flex-basis: calc(100%-2 * 30 / 3);
+  flex-basis: calc((100% - (2 * 30px)) / 3);
   margin-right: 30px;
   margin-top: 56px;
   background: #ffffff;
