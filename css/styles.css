@@ -8,13 +8,17 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
   border: 0;
-  background-color: var(---color-seconadary);
+  background-color: #ffffff;
+  width: 1600px;
 }
 .style {
   list-style: none;
 }
 .decoration {
   text-decoration: none;
+}
+hr {
+  border: 1px solid #ececec;
 }
 :root {
   --brand-color: #2196f3;
@@ -25,11 +29,12 @@ body {
 a:hover {
   color: var(--brand-color);
 }
-
+a:focus {
+  color: var(--brand-color);
+}
 .container {
   width: 1200px;
   align-items: center;
-  display: inline;
 }
 
 .nav-button {
@@ -47,7 +52,7 @@ a:hover {
 }
 button:hover {
   background-color: var(--brand-color);
-  color: var(--color-secondary);
+  color: #fff;
 }
 .menu a {
   text-decoration: none;
@@ -60,12 +65,13 @@ button:hover {
 }
 
 .first-link {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1, 142em;
-  letter-spacing: 0, 02em;
+  line-height: 1.14;
 }
-
+.first-link:hover {
+  color: var(--brand-color);
+}
 .second-link {
   color: #757575;
   line-height: 24px;
@@ -105,17 +111,20 @@ button:hover {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  line-height: 1, 192em;
+  line-height: 1.2em;
   text-decoration: none;
 }
 
 .blue-text {
   color: var(--brand-color);
 }
-
+.white-text {
+  color: #ffffff;
+}
+.main-section .container {
+  width: 1200px;
+}
 .main-section {
-  width: 1600px;
-  height: 600;
   background-color: #2f303a;
   margin: auto;
   display: block;
@@ -266,7 +275,7 @@ button:hover {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  line-height: 1, 192em;
+  line-height: 1.2em;
 }
 .address {
   font-style: normal;
@@ -289,46 +298,41 @@ button:hover {
 
 .portfolio {
   width: 1600px;
-  height: 1880px;
 }
 .page-second {
-  width: 1170px;
-  height: 1360px;
+  width: 1600px;
   padding-top: 94px;
   padding-left: 215px;
+  padding-bottom: 94px;
 }
-.portfolio-list {
-  margin-left: 327px;
-}
-button:hover {
-  background-color: var(--brand-color);
-  color: #fff;
+
+.button-second:hover {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .button-second {
+  font-size: 16px;
   cursor: pointer;
   text-align: center;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 1.625em;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  border: 0;
+  border-style: none;
+  margin-left: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
   background-color: #f5f4fa;
-  box-shadow: 0px 3px 1 px rgb(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  box-shadow: 0px 3px 1px rgb(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .button-list {
   display: flex;
-  gap: 8px;
-  justify-content: space-around;
-}
-.page-name {
-  margin: 6px 22px;
-}
-
-.example-projects {
-  width: 1170px;
-  padding-bottom: 94px;
+  justify-content: center;
 }
 
 .example {
@@ -338,28 +342,33 @@ button:hover {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 48px;
-  gap: 30px;
 }
 .projects-item {
-  width: 370px;
+  justify-content: space-between;
+  flex-basis: calc(100%-2 * 30 / 3);
+  margin-right: 30px;
+  margin-top: 56px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-}
-.example {
-  line-height: 1.714em;
-  letter-spacing: 0, 03em;
-  color: var(--color-third);
-  padding-left: 24px;
 }
 .project-name {
   font-size: 18px;
   font-weight: 700;
-  line-height: 2em;
-  letter-spacing: 0, 06em;
+  line-height: 36px;
   padding-top: 20px;
   padding-left: 24px;
 }
+.example {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: var(--color-third);
+  padding-left: 24px;
+  letter-spacing: 0.03em;
+  padding-top: 8px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
 .view {
   display: block;
 }
