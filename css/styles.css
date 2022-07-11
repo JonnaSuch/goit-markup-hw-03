@@ -345,7 +345,7 @@ button:hover {
 }
 .projects-item {
   justify-content: space-between;
-  flex-basis: calc((100% - (2 * 30px)) / 3);
+  flex-basis: calc(100%-2 * 30px / 3);
   margin-right: 30px;
   margin-top: 56px;
   background: #ffffff;
@@ -365,7 +365,6 @@ button:hover {
   padding-left: 24px;
   letter-spacing: 0.03em;
   padding-top: 8px;
-  font-weight: 400;
   padding-bottom: 20px;
 }
 
