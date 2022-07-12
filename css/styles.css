@@ -4,12 +4,21 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --brand-color: #2196f3;
+  --color-secondary: #060404;
+  --color-third: #757575;
+  --line: #ececec;
+}
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
   border: 0;
   background-color: #ffffff;
   width: 1600px;
+}
+img {
+  display: block;
 }
 .style {
   list-style: none;
@@ -20,12 +29,7 @@ body {
 hr {
   border: 1px solid #ececec;
 }
-:root {
-  --brand-color: #2196f3;
-  --color-secondary: #060404;
-  --color-third: #757575;
-  --line: #ececec;
-}
+
 a:hover {
   color: var(--brand-color);
 }
@@ -34,9 +38,14 @@ a:focus {
 }
 .container {
   width: 1200px;
-  align-items: center;
+  margin: 0 auto;
 }
-
+.header .container {
+  width: 1600px;
+}
+.page-second .container {
+  width: 1200px;
+}
 .nav-button {
   display: flex;
 }
@@ -44,10 +53,9 @@ a:focus {
   text-decoration: none;
 }
 .nav-menu {
-  height: 80px;
   border-bottom: 1px solid #ececec;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 button:hover {
@@ -80,7 +88,6 @@ button:hover {
 .link {
   text-decoration: none;
   width: 58px;
-  height: 16px;
   top: 32px;
   left: 55px;
 }
@@ -95,8 +102,8 @@ button:hover {
   display: flex;
   font-size: 14px;
   line-height: 24px;
-  padding-left: 220px;
-  margin-right: 10px;
+  margin-left: auto;
+  padding-right: 227px;
 }
 .contact-list {
   margin-right: 30px;
@@ -131,8 +138,8 @@ button:hover {
 }
 .main-section-text {
   display: block;
-  text-align: center;
-  padding: 200px 452px 280px 452px;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
 .main-descripton {
@@ -144,12 +151,10 @@ button:hover {
   text-transform: uppercase;
   display: block;
   width: 696px;
-  margin: auto;
 }
 
 .button-first {
   width: 200px;
-  height: 50px;
   border-radius: 4px;
   margin-top: 30px;
   background-color: var(--brand-color);
@@ -182,7 +187,6 @@ button:hover {
 .text {
   font-size: 14px;
   line-height: 1.71em;
-  height: fit-content;
   color: #757575;
   padding-top: 10px;
 }
@@ -198,12 +202,10 @@ button:hover {
 
 .img-size {
   width: 370px;
-  height: 294px;
 }
 .works {
   display: flex;
   list-style-type: none;
-  gap: 30px;
   justify-content: space-around;
 }
 .title-works {
@@ -229,8 +231,7 @@ button:hover {
 
 .person {
   display: flex;
-  gap: 30px;
-  justify-content: center;
+  justify-content: space-around;
   padding-bottom: 94px;
 }
 .person-name {
@@ -243,9 +244,6 @@ button:hover {
 }
 .person-list {
   list-style-type: none;
-  width: 270px;
-  height: 368px;
-  margin-left: 30px;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -256,13 +254,13 @@ button:hover {
   letter-spacing: 0.03em;
   line-height: 1.187em;
   color: var(--color-third);
+  padding-bottom: 30px;
 }
 
 .footer {
   background-color: #2f303a;
   color: var(--color-secondary);
   width: 1600px;
-  height: 252px;
 }
 .logo-class {
   padding-top: 60px;
@@ -282,9 +280,11 @@ button:hover {
   padding-top: 20px;
   padding-left: 215px;
 }
-.address-link {
+.address-color {
   color: #ffffff;
+  font-style: normal;
 }
+
 .footer-list-item style {
   margin-top: 9px;
 }
@@ -296,14 +296,10 @@ button:hover {
   line-height: 24px;
 }
 
-.portfolio {
-  width: 1600px;
-}
 .page-second {
-  width: 1600px;
   padding-top: 94px;
-  padding-left: 215px;
   padding-bottom: 94px;
+  padding-left: 215px;
 }
 
 .button-second:hover {
@@ -321,10 +317,7 @@ button:hover {
   border-radius: 4px;
   border-style: none;
   margin-left: 8px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
   background-color: #f5f4fa;
   box-shadow: 0px 3px 1px rgb(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -344,12 +337,11 @@ button:hover {
   flex-wrap: wrap;
 }
 .projects-item {
-  justify-content: space-between;
-  flex-basis: calc(100%-2 * 30px / 3);
   margin-right: 30px;
   margin-top: 56px;
   background: #ffffff;
   border: 1px solid #eeeeee;
+  justify-content: center;
 }
 .project-name {
   font-size: 18px;
@@ -362,10 +354,11 @@ button:hover {
   font-size: 16px;
   line-height: 1.5em;
   color: var(--color-third);
-  padding-left: 24px;
+  padding-left: 220px;
   letter-spacing: 0.03em;
   padding-top: 8px;
   padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .view {
