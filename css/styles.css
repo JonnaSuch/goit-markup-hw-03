@@ -16,8 +16,6 @@ body {
   border: 0;
   background-color: #ffffff;
   width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 img {
   display: block;
@@ -41,6 +39,11 @@ a:focus {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0, 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .header .container {
   width: 1600px;
@@ -112,6 +115,7 @@ button:hover {
   margin-right: 30px;
 }
 .logo {
+  padding-left: 215px;
   padding-right: 90px;
   font-family: Raleway;
   font-weight: 700;
@@ -137,9 +141,12 @@ button:hover {
   display: block;
 }
 .main-section-text {
-  display: block;
+  display: flex;
   padding-top: 200px;
   padding-bottom: 280px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .main-descripton {
@@ -165,7 +172,6 @@ button:hover {
   font-size: 16px;
   border: none;
   padding: 10px 41px 10px 42px;
-  margin-left: 215px;
 }
 
 .list-lorem {
@@ -279,13 +285,14 @@ button:hover {
   font-style: normal;
   padding-top: 20px;
   padding-left: 215px;
+  padding-bottom: 60px;
 }
 .address-color {
   color: #ffffff;
   font-style: normal;
 }
 
-.footer-list-item style {
+.footer-list-item {
   margin-top: 9px;
 }
 
@@ -340,8 +347,10 @@ button:hover {
   margin-right: 30px;
   margin-top: 56px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
   justify-content: center;
+}
+.project-border {
+  border: 1px solid #eeeeee;
 }
 .project-name {
   font-size: 18px;
