@@ -16,38 +16,37 @@ body {
   border: 0;
   background-color: #ffffff;
   width: 1600px;
+  margin: 0 auto;
 }
 img {
   display: block;
+  object-fit: cover;
 }
-.style {
+.list-style-none {
   list-style: none;
 }
-.decoration {
+.decoration-none {
   text-decoration: none;
 }
 hr {
   border: 1px solid #ececec;
 }
 
-a:hover {
-  color: var(--brand-color);
-}
+a:hover,
 a:focus {
   color: var(--brand-color);
 }
+
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0, 15px;
+  padding: 0 15px;
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.header .container {
-  width: 1600px;
-}
+
 .page-second .container {
   width: 1200px;
 }
@@ -89,7 +88,6 @@ button:hover {
 .second-link {
   color: #757575;
   line-height: 24px;
-  text-decoration: none;
 }
 .link {
   text-decoration: none;
@@ -98,18 +96,16 @@ button:hover {
   left: 55px;
 }
 .menu {
-  list-style-type: none;
   display: flex;
-  text-decoration: none;
+  margin-left: 47px;
 }
 
 .contact {
-  list-style-type: none;
   display: flex;
   font-size: 14px;
   line-height: 24px;
-  margin-left: auto;
-  padding-right: 227px;
+  margin: 0;
+  justify-content: flex-end;
 }
 .contact-list {
   margin-right: 30px;
@@ -123,7 +119,6 @@ button:hover {
   line-height: 31px;
   letter-spacing: 0.03em;
   line-height: 1.2em;
-  text-decoration: none;
 }
 
 .blue-text {
@@ -132,9 +127,7 @@ button:hover {
 .white-text {
   color: #ffffff;
 }
-.main-section .container {
-  width: 1200px;
-}
+
 .main-section {
   background-color: #2f303a;
   margin: auto;
@@ -142,8 +135,6 @@ button:hover {
 }
 .main-section-text {
   display: flex;
-  padding-top: 200px;
-  padding-bottom: 280px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -175,7 +166,6 @@ button:hover {
 }
 
 .list-lorem {
-  padding-top: 94px;
   display: flex;
 }
 
@@ -194,11 +184,10 @@ button:hover {
   font-size: 14px;
   line-height: 1.71em;
   color: #757575;
-  padding-top: 10px;
 }
 .first-lorem {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 94px;
 }
 .our-job .container {
@@ -211,8 +200,7 @@ button:hover {
 }
 .works {
   display: flex;
-  list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .title-works {
   font-size: 36px;
@@ -224,7 +212,6 @@ button:hover {
 
 .our-team {
   background-color: #f5f4fa;
-  padding-top: 94px;
 }
 .title-team {
   font-size: 36px;
@@ -237,7 +224,7 @@ button:hover {
 
 .person {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 94px;
 }
 .person-name {
@@ -277,7 +264,6 @@ button:hover {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
   letter-spacing: 0.03em;
   line-height: 1.2em;
 }
@@ -299,14 +285,7 @@ button:hover {
 .footer-contact {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
   line-height: 24px;
-}
-
-.page-second {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 215px;
 }
 
 .button-second:hover {
@@ -323,18 +302,18 @@ button:hover {
   letter-spacing: 0.03em;
   border-radius: 4px;
   border-style: none;
-  margin-left: 8px;
+
   padding: 6px 22px;
   background-color: #f5f4fa;
-  box-shadow: 0px 3px 1px rgb(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list {
   display: flex;
   justify-content: center;
 }
-
+.button-list-item {
+  margin-left: 8px;
+}
 .example {
   font-size: 16px;
   color: var(--color-third);
@@ -342,12 +321,12 @@ button:hover {
 .projects {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 .projects-item {
-  margin-right: 30px;
-  margin-top: 56px;
+  display: flex;
   background: #ffffff;
-  justify-content: center;
+  margin-top: 56px;
 }
 .project-border {
   border: 1px solid #eeeeee;
