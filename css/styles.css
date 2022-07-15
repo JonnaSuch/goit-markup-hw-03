@@ -65,6 +65,10 @@ a:focus {
   align-items: center;
   justify-content: space-between;
 }
+.menu-style {
+  display: flex;
+  justify-content: space-between;
+}
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -193,7 +197,6 @@ button:hover {
 .first-lorem {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 
 .img-size {
